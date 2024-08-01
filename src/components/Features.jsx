@@ -13,7 +13,7 @@ const iconMap = {
 
 const Feature = ({ icon, heading, paragraph }) => {
   return (
-    <div className="p-6 text-center rounded-lg shadow-lg">
+    <div className="p-6 text-center rounded-lg">
       <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 bg-blue-600 text-white rounded-full">
         <FontAwesomeIcon icon={iconMap[icon]} className="text-2xl" />
       </div>
@@ -24,25 +24,3 @@ const Feature = ({ icon, heading, paragraph }) => {
 };
 
 export default Feature;
-
-// import React, { useState } from 'react';
-// // import Featurecomp from './Featurecomp';
-// import Togglesection from './Togglesection';
-
-// function App() {
-//   // const [showFeatures, setShowFeatures] = useState(false);
-
-//   const handleToggle = (value) => {
-//     setShowFeatures(value); 
-//   };
-
-//   return (
-//     <div className="bg-gray-200 min-h-screen flex flex-col justify-center items-center">
-//       {/* <h1 className="text-3xl font-bold mb-6">Your App</h1> */}
-//       <Togglesection onToggle={handleToggle} />
-//       {/* {showFeatures && <Featurecomp />} */}
-//     </div>
-//   );
-// }
-
-// export default App;

@@ -3,14 +3,15 @@ import Hero from "../components/Hero";
 import FeaturesList from './FeaturesList'; 
 import Newsletter from "./Newsletter";
 import News from "./News";
+import ProjectDetailsList from './ProjectsetailList';
 import MainComponent from "./MainComponent";
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 const Navbar = () => {
   const navigate = useNavigate();
   return (
-    <div className="bg-neutral-900 px-6">
-      <nav className="p-4 flex justify-between items-center">
+    <div className="bg-neutral-900  px-6">
+      <nav className="p-4 flex justify-between items-center mx-9">
         <div className="flex items-center">
           <img src={logo} alt="Logo" className="h-10 rounded-lg mr-2" />
         </div>
@@ -32,6 +33,7 @@ const Navbar = () => {
       <Hero />
       <FeaturesList />
       <News />
+      <ProjectDetailsList />
       <MainComponent />
       <Newsletter />
       <Footer />
@@ -40,3 +42,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+  

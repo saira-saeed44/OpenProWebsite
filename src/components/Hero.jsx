@@ -4,8 +4,8 @@ import playIcon from "../components/images/play.png";
 
 const Hero = () => {
   return (
-    <div className="py-20 text-center">
-      <div className="max-w-3xl mx-auto">
+    <div className="py-20  text-center">
+      <div className="max-w-7xl mx-auto">
         <h1 className="text-5xl font-extrabold text-gray-200 mb-4">
           Landing template for startups
         </h1>
@@ -22,10 +22,10 @@ const Hero = () => {
           </button>
         </div>
         <div className="relative inline-block mt-5">
-          <img src={img} alt="Hero Image" className="w-full h-auto" />
+          <img src={img} alt="Hero Image"  className="w-full h-auto" />
           <button
             className="absolute inset-0 flex justify-center items-center"
-            style={{ background: 'rgba(0, 0, 0, 0.3)', border: 'none', borderRadius: '50%' }}
+            style={{ background: 'rgba(0, 0, 0,0)', border: 'none', borderRadius: '2%' }}
             onClick={() => alert('Play button clicked')} 
           >
             <img src={playIcon} alt="Play" className="w-12 rounded-3xl h-12" />

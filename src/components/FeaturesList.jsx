@@ -4,7 +4,7 @@ import featureData from '../components/utills/data';
 
 const FeaturesList = () => {
   return (
-    <div className="py-16">
+    <div className="pt-16 mx-9">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {featureData.map((feature, index) => (
@@ -16,7 +16,7 @@ const FeaturesList = () => {
             />
           ))}
         </div>
-        <hr className=" mt-12 py-12 md:py-20 border-t border-gray-800" />
+        <hr className=" mt-12 pt-12 md:pt-20 border-t border-gray-800" />
       </div>
     </div>
   );

@@ -1,29 +1,17 @@
-import React, { useState } from 'react';
-import { cardData } from './utills/data';
-import Card from './MainComponents';
+import React from 'react';
+import testimonials from '../components/utills/data';
+import Card from './Card';
 
-const App = () => {
-  const [visibleCards, setVisibleCards] = useState(6);
-
-  const loadMoreCards = () => {
-    setVisibleCards(prevVisibleCards => prevVisibleCards + 6);
-  };
-
-  console.log(cardData);
+const MainComponent = () => {
   return (
-    <div className="container mx-auto">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {cardData?.slice(0, visibleCards)?.map((card, index) => (
-          <Card  card={card} />
+    <div className="container mx-auto p-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {testimonials.map(({ id, image, text, author }) => (
+          <Card key={id} image={image} text={text} author={author} />
         ))}
       </div>
-      {visibleCards <cardData.length && (
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" onClick={loadMoreCards}>
-          Load More
-        </button>
-      )}
     </div>
   );
 };
 
-export default App;
+export default MainComponent;
