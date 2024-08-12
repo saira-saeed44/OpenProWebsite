@@ -1,15 +1,15 @@
 import React from "react";
 import img from "./images/hero.jpg";
-import playIcon from "../components/images/play.png"; 
+import playIcon from "../components/images/play.png";
 
 const Hero = () => {
   return (
-    <div className="py-20  text-center">
+    <div className="py-20 mt-10 text-center">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-5xl font-extrabold text-gray-200 mb-4">
+        <h1 className="text-5xl font-extrabold text-heading mb-4">
           Landing template for startups
         </h1>
-        <p className="text-gray-400 text-xl mb-6">
+        <p className="text-paragraph text-xl mb-6">
           Our landing page template works on all devices, so you only have to
           set it up once, <br /> and get beautiful results forever.
         </p>
@@ -22,20 +22,24 @@ const Hero = () => {
           </button>
         </div>
         <div className="relative inline-block mt-5">
-          <img src={img} alt="Hero Image"  className="w-full h-auto" />
+          <img src={img} alt="Hero Image" className="w-full h-auto" />
           <button
             className="absolute inset-0 flex justify-center items-center"
-            style={{ background: 'rgba(0, 0, 0,0)', border: 'none', borderRadius: '2%' }}
-            onClick={() => alert('Play button clicked')} 
+            style={{
+              background: "rgba(0, 0, 0,0)",
+              border: "none",
+              borderRadius: "2%",
+            }}
+            onClick={() => alert("Play button clicked")}
           >
             <img src={playIcon} alt="Play" className="w-12 rounded-3xl h-12" />
           </button>
         </div>
       </div>
-      <h1 className="text-4xl font-bold text-gray-300 mb-4 mt-20">
+      <h1 className="text-4xl font-bold text-heading mb-4 mt-20">
         The majority of our customers do not <br /> understand their workflows.
       </h1>
-      <p className="text-gray-400 mb-6">
+      <p className="text-paragraph mb-6">
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
         officia deserunt <br /> mollit anim id est laborum.
       </p>

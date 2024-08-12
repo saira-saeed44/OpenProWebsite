@@ -1,20 +1,31 @@
 import React from "react";
+import newsletterBg from "../components/assests/svg/newsletterbg.svg";
+
 const Newsletter = () => {
   return (
-    <div className="bg-blue-700 flex justify-between items-center mx-9 py-12 my-12">
-      <div className="w-full m-4 md:w-1/2 lg:w-2/5">
-        <h2 className="text-3xl font-bold text-gray-100 mx-4">Stay in the loop</h2>
-        <p className="text-xl text-gray-300 p-4">Join newsletter to get news before anyone else.</p>
+    <div className="bg-sky-600 flex flex-col md:flex-row justify-between items-center mx-4 md:mx-9 py-20 my-12 px-6 md:px-12 relative">
+      <img
+        src={newsletterBg}
+        alt="newsletter backgroud"
+        className="absolute right-0 top-0 transform transition-transform duration-1000 ease-in-out hover:scale-110"
+      />
+      <div className="w-full md:w-1/2 text-center md:text-left mb-3 md:mb-0">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-100 transform transition-transform duration-700 hover:translate-x-2">
+          Stay in the loop
+        </h2>
+        <p className="text-lg md:text-xl text-gray-300 transform transition-transform duration-700 hover:translate-x-2">
+          Join our newsletter to get news before anyone.
+        </p>
       </div>
-      <div className="w-full  md:w-1/2 lg:w-2/5 flex flex-col md:flex-row items-center md:items-start">
+      <div className="w-full md:w-1/2 space-x-2 space-y-3 md:space-y-0 flex flex-col md:flex-row items-center justify-center">
         <input
           type="email"
           placeholder="Your best email"
-          className="w-full md:w-2/3 py-3 bg-blue-800 border-gray-500 border mb-4 md:mb-0 md:mr-2 focus:outline-none"
+          className="w-full md:w-2/3 py-3 px-4 bg-blue-800 border border-blue-600 text-gray-100 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 transform transition-transform duration-700 hover:scale-105"
         />
-        <button className="w-full md:w-1/3 px-6 py-3 mr-7 bg-gray-300 font-semibold	 text-blue-700  focus:outline-none hover:text-blue-400">
+        <button className="w-full md:w-1/3 px-4 py-3 bg-gray-300 font-semibold text-blue-700 focus:outline-none hover:bg-white hover:text-blue-600 transform transition-transform duration-700 hover:scale-105">
           Subscribe
-        </button> 
+        </button>
       </div>
     </div>
   );
